@@ -17,6 +17,7 @@
     "@zeit/next-sass": "^1.0.1",
     "bootstrap": "^4.5.2",
     "contentful": "^7.14.6",
+    "framer-motion": "^2.6.5",
     "next": "9.5.2",
     "next-on-netlify": "^2.3.2",
     "nextjs-fonts": "^0.22.0",

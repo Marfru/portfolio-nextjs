@@ -5,7 +5,8 @@ import SinglePost from '../../components/singlePost'
 import HomeLink from '../../components/HomeLink'
 import { fetchPostContent } from '../../contentful'
 import Header from '../../components/Header'
-import { Container } from 'react-bootstrap';
+// import { motion } from 'framer-motion';
+import { Container } from 'react-bootstrap'
 
 function Skills() {
   const router = useRouter();
@@ -23,7 +24,21 @@ function Skills() {
   }, [])
 
   return (
+    // <motion.div initial="hidden" animate="visible" variants={{
+    //   hidden: {
+    //     scale: .8,
+    //     opacity: 0
+    //   },
+    //   visible: {
+    //     scale: 1,
+    //     opacity: 1,
+    //     transition: {
+    //       delay: .4
+    //     }
+    //   }
+    // }}>
     <Container>
+
     <Header />
     <HomeLink/>
     {singlePosts.length > 0
@@ -42,6 +57,7 @@ function Skills() {
         ))
       : null}
   </Container>
+  // </motion.div>
   )
 }
 
