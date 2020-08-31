@@ -15,4 +15,5 @@ module.exports = withCSS(withSass({
         return config;
     },
     distDir: 'build',
+    target: 'serverless'
 }));
