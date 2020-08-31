@@ -1,0 +1,15 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & > .MuiSvgIcon-root {
+    margin: .5rem 0;
+  }
+}

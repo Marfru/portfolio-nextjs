@@ -1,0 +1,25 @@
+.skills {
+  text-align: center;
+  transition: transform 500ms ease-in-out;
+  &__text {
+    padding: 1rem 0;
+    text-align: left;
+  }
+
+  &__span {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+
+    @include respond(phone) {
+      transform: scale(1);
+    }
+
+    &__text {
+      color: #fff
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
+
+@import './utilities/mixins.scss';
+@import './utilities/variables.scss';
+
+
+@import './base.scss';
+
+@import './common/Header.scss';
+@import './common/Sidebar.scss';
+@import './common/About.scss';
+@import './common/Footer.scss';
+@import './common/Skills.scss';
+@import './common/Button.scss';
