@@ -1,5 +1,6 @@
 import '../styles/reset.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/bootstrap.min.css';
+import '../styles/bootstrap-grid.min.css';
 import '../styles/main.scss'
 
 function MyApp({ Component, pageProps }) {
