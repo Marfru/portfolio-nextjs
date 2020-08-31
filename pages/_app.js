@@ -2,11 +2,12 @@ import '../styles/reset.css'
 import '../styles/bootstrap.min.css'
 import '../styles/bootstrap-grid.min.css'
 import '../styles/main.scss'
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
+import { Container } from 'react-bootstrap';
+import Header from '../components/Header';
 
 function MyApp({ Component, pageProps, router }) {
   return (
-  <AnimatePresence>
   <motion.div key={router.route} initial="pageInitial" exit="pageExit" animate="pageAnimate" variants={{
     pageInitial: {
       scale: .8,
@@ -25,9 +26,11 @@ function MyApp({ Component, pageProps, router }) {
       opacity: 0,
     }
   }}>
+      <Container>
+      <Header/>
     <Component {...pageProps} />
+    </Container>
   </motion.div>
-  </AnimatePresence>
   )}
 
 export default MyApp

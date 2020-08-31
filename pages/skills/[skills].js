@@ -24,23 +24,8 @@ function Skills() {
   }, [])
 
   return (
-    // <motion.div initial="hidden" animate="visible" variants={{
-    //   hidden: {
-    //     scale: .8,
-    //     opacity: 0
-    //   },
-    //   visible: {
-    //     scale: 1,
-    //     opacity: 1,
-    //     transition: {
-    //       delay: .4
-    //     }
-    //   }
-    // }}>
-    <Container>
-
-    <Header />
-    <HomeLink/>
+    <>
+   <HomeLink/>
     {singlePosts.length > 0
       ? singlePosts.map(p => (
     <SinglePost
@@ -56,8 +41,7 @@ function Skills() {
 
         ))
       : null}
-  </Container>
-  // </motion.div>
+      </>
   )
 }
 
