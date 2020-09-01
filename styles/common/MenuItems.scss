@@ -20,4 +20,9 @@
       }
     }
   }
+
+  &__socials {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }

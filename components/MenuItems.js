@@ -1,6 +1,9 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { fetchMenuContent } from '../contentful'
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import EmailIcon from '@material-ui/icons/Email';
 
 function MenuItems({open, setOpen}) {
   const [menu, setMenu] = useState([])
@@ -29,6 +32,12 @@ function MenuItems({open, setOpen}) {
           </li>
           ))
         : null}
+        <li><ul className="menu__socials">
+          <li><a href="https://www.linkedin.com/in/marcos-frutos-3a023385/" target='_blank' rel='noreferrer noopener'><LinkedInIcon fontSize="large"/></a></li>
+          <li><a href="https://github.com/Marfru" target='_blank' rel='noreferrer noopener'><GitHubIcon fontSize="large"/></a></li>
+          <li><a href="mailto:hola@marfru.com" target='_blank' rel='noreferrer noopener'><EmailIcon fontSize="large"/></a></li>
+            </ul>
+        </li>
       </ul>
     </nav>
   </div>
