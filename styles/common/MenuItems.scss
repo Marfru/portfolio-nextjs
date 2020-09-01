@@ -1,11 +1,11 @@
 .menu {
   z-index: 10;
   background-color: #e8effc;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +17,10 @@
       a {
         font-size: 5rem;
         font-weight: 700;
+
+        @include respond(phone) {
+          font-size: 4rem;
+        }
       }
     }
   }

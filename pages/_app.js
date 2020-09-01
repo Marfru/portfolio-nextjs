@@ -2,7 +2,7 @@ import '../styles/reset.css'
 import '../styles/bootstrap.min.css'
 import '../styles/bootstrap-grid.min.css'
 import '../styles/main.scss'
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 import { Container } from 'react-bootstrap';
 import Header from '../components/Header';
 import Footer from '../components/Footer'
