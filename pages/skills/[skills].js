@@ -5,7 +5,7 @@ import SinglePost from '../../components/singlePost'
 import HomeLink from '../../components/HomeLink'
 import { fetchPostContent } from '../../contentful'
 
-function Skills() {
+function SkillsPage() {
   const router = useRouter();
   const [singlePosts, setSinglePosts] = useState([])
 
@@ -42,4 +42,8 @@ function Skills() {
   )
 }
 
-export default Skills
+SkillsPage.getInitialProps = async ({ query }) => {
+  return { name: query.name }
+}
+
+export default SkillsPage

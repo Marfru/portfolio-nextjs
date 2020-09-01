@@ -9,4 +9,8 @@ function WorkPage() {
   )
 }
 
+WorkPage.getInitialProps = async ({ query }) => {
+  return { name: query.name }
+}
+
 export default WorkPage

@@ -13,6 +13,9 @@
   &__menu {
     cursor: pointer;
     z-index: 11;
+    @include respond(phone) {
+      font-size: 2rem !important;
+    }
   }
 }
 

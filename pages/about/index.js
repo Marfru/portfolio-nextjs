@@ -9,4 +9,8 @@ function AboutPage() {
   )
 }
 
+AboutPage.getInitialProps = async ({ query }) => {
+  return { name: query.name }
+}
+
 export default AboutPage
