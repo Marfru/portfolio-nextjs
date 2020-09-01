@@ -9,7 +9,7 @@ function Menu({open, setOpen}) {
     <>
     {open ?
     <CloseIcon className="header__menu" open={open} onClick={() => setOpen(!open)}/> : 
-    <MenuIcon className="header__menu" open={open} onClick={() => setOpen(!open)}/> }
+    <MenuIcon className="header__menu" open={open} onClick={() => setOpen(!open)}/>}
     { open && 
     <MenuItems/>
     }

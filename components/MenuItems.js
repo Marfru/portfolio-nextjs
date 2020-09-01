@@ -13,8 +13,15 @@ function MenuItems({open, setOpen}) {
     async function getMenu() {
       const allMenus = await fetchMenuContent()
       setMenu([...allMenus])
+      document.body.classList.add('scroll-block');
+      
     }
     getMenu()
+    return () => {
+      document.body.classList.remove('scroll-block');
+      
+    }
+    
   }, [])
   return (
     <MenuAnimation>
