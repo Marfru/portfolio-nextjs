@@ -4,9 +4,6 @@ import { useEffect, useState } from 'react'
 import SinglePost from '../../components/singlePost'
 import HomeLink from '../../components/HomeLink'
 import { fetchPostContent } from '../../contentful'
-import Header from '../../components/Header'
-// import { motion } from 'framer-motion';
-import { Container } from 'react-bootstrap'
 
 function Skills() {
   const router = useRouter();

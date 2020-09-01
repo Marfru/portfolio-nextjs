@@ -17,7 +17,7 @@ function About() {
     {about.length > 0
         ? about.map(p => (
           <div className="about__content">
-            <h2><span className="about__emoji" aria-label="hello" role="img">👋</span> {p.fields.subtitle}</h2>
+            <h3 style={{ marginBottom: '1.5rem'}}><span className="about__emoji" aria-label="hello" role="img">👋</span> {p.fields.subtitle}</h3>
             <h1>{p.fields.title}</h1>
             <p dangerouslySetInnerHTML={{ __html: p.fields.description }} />
             </div>

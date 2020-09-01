@@ -2,8 +2,6 @@ import { useEffect, useState } from 'react'
 import Head from 'next/head'
 import Post from '../components/post'
 import About from '../components/About'
-// import Sidebar from '../components/Sidebar'
-import Footer from '../components/Footer'
 import { Row } from 'react-bootstrap';
 import { fetchPostContent } from '../contentful';
 
@@ -40,7 +38,6 @@ function HomePage() {
           ))
         : null}
         </Row>
-        <Footer />
     </>
   )
 }

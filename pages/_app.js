@@ -5,9 +5,12 @@ import '../styles/main.scss'
 import { motion } from 'framer-motion';
 import { Container } from 'react-bootstrap';
 import Header from '../components/Header';
+import Footer from '../components/Footer'
 
 function MyApp({ Component, pageProps, router }) {
   return (
+    <Container>
+    <Header/>
   <motion.div key={router.route} initial="pageInitial" exit="pageExit" animate="pageAnimate" variants={{
     pageInitial: {
       scale: .8,
@@ -26,11 +29,10 @@ function MyApp({ Component, pageProps, router }) {
       opacity: 0,
     }
   }}>
-      <Container>
-      <Header/>
     <Component {...pageProps} />
+    </motion.div>
+    <Footer />
     </Container>
-  </motion.div>
   )}
 
 export default MyApp

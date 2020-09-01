@@ -1,11 +1,13 @@
+import React, { useState } from 'react';
 import Logo from '../images/logo2.svg';
-import MenuIcon from '@material-ui/icons/Menu';
+import Menu from './Menu';
 
 function Header() {
+  const [open, setOpen] = useState(false);
   return (
     <div className="header">
       <img className="header__logo" src={Logo} alt="Logo" />
-      <MenuIcon className="header__menu"/>
+      <Menu open={open} setOpen={setOpen}/>
     </div>
   )
 }

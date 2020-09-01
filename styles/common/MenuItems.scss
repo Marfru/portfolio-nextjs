@@ -1,0 +1,23 @@
+.menu {
+  z-index: 10;
+  background-color: #e8effc;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    li {
+      text-align: center;
+
+      a {
+        font-size: 5rem;
+        font-weight: 700;
+      }
+    }
+  }
+}

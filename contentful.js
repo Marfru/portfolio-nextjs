@@ -18,3 +18,11 @@ export async function fetchHomeContent() {
   if (entries.items) return entries.items
   console.log(`Error getting Entries for ${contentType.name}.`)
 }
+
+export async function fetchMenuContent() {
+  const entries = await client.getEntries({
+    content_type: 'menu',
+  })
+  if (entries.items) return entries.items
+  console.log(`Error getting Entries for ${contentType.name}.`)
+}
