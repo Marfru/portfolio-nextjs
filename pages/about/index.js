@@ -2,7 +2,6 @@ import AboutContent from '../../components/AboutContent'
 import { useEffect, useState } from 'react'
 import TitlePage from '../../components/TitlePage'
 import Breadcrumbs from '../../components/Breadcrumbs'
-import SkillSet from '../../components/SkillSet';
 import { fetchAboutContent } from '../../contentful'
 import { Row, Col, Image } from 'react-bootstrap'
 
@@ -35,7 +34,6 @@ function AboutPage() {
           </div>
           ))
         : null}
-        <SkillSet/>
     </>
   )
 }

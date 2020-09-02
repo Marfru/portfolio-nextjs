@@ -1,8 +1,12 @@
+.footer-container {
+  margin-top: 3.5rem;
+}
+
 .footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 3.5rem;
+  margin-top: 1.5rem;
   &__content {
     font-size: 14px;
     font-weight: 400;
