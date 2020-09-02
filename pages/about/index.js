@@ -1,4 +1,3 @@
-import AboutContent from '../../components/AboutContent'
 import { useEffect, useState } from 'react'
 import TitlePage from '../../components/TitlePage'
 import Breadcrumbs from '../../components/Breadcrumbs'
