@@ -1,6 +1,10 @@
 .about {
   margin-bottom: 2rem;
 
+  @include respond(phone) {
+    margin: 2rem;
+  }
+
   &__emoji {
     font-size: 1.5rem;
     padding-right: .5rem

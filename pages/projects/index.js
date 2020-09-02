@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import TitlePage from '../../components/TitlePage';
 import Breadcrumbs from '../../components/Breadcrumbs'
 import { fetchProjectsContent } from '../../contentful'
-import { Row, Image } from 'react-bootstrap'
+import { Row, Image, Col } from 'react-bootstrap'
 import LaunchIcon from '@material-ui/icons/Launch';
 
 function ProjectsPage() {
@@ -22,9 +22,12 @@ function ProjectsPage() {
     <Row>
     {projects.length > 0
         ? projects.map(p => (
-      <div className="skills">
+          <Col lg={4} sm={12}>
+        <div className="skills">
           <a href={p.fields.url} target="_blank" rel="noopener noreferrer">
+            <div style={{ padding: '10px 30px'}}>
             <Image className="skills__image" src={`https:${p.fields.image.fields.file.url}`} fluid/>
+            </div>
             <div className="skills__text">
               <h3>{p.fields.title}</h3>
               <p>{p.fields.description}</p>
@@ -32,6 +35,7 @@ function ProjectsPage() {
             </div>
             </a>
         </div>
+        </Col>
           ))
         : null}
         </Row>

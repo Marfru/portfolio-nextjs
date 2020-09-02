@@ -8,7 +8,8 @@ body {
   -webkit-font-smoothing: antialiased;
   position: relative;
   height: 100%;
-  background-color: #e8effc;
+  // background-color: #e8effc;
+  background-color: #f4f7f9;
   .scroll-block {
     overflow: hidden;
   }
@@ -64,5 +65,49 @@ p {
     height: 100px;
     width: auto;
     object-fit: contain;
+  }
+}
+
+.title-page {
+  @include respond(phone) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+.stack {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+
+  @include respond(phone) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  &__container {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 30px -15px rgba(0,0,0,.2);
+    display: flex;
+    align-content: center;
+    cursor: pointer;
+
+    &:hover > img {
+      filter: grayscale(0);
+    }
+
+    @include respond(phone) {
+      flex: 1 0 21%;
+      margin: 5px;
+      justify-content: center;
+    }
+  }
+
+  img {
+    filter: grayscale(100%);
+    transition: filter 500ms ease-in-out;
   }
 }

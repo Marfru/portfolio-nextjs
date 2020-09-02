@@ -1,5 +1,9 @@
 .breadcrumbs {
-  display: flex;
+  display: inline-flex;
+  @include respond(phone) {
+    margin-left: 1.5rem;
+    margin-right: 2rem;
+  }
   
   &:hover {
     text-decoration: underline;

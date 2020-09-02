@@ -19,7 +19,7 @@ function SinglePost({ alt, title, description, description2, image1, image2 }) {
           <Image src={image2} alt={alt} fluid />
           </Col>
           <Col sm={12} lg={5}>
-          <p>{description2}</p>
+          <p className="single-view__paragraph">{description2}</p>
           </Col>
         </Row>
       </div>

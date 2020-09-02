@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import Head from 'next/head'
 import Post from '../components/post'
 import About from '../components/About'
 import { Row } from 'react-bootstrap';
+import SkillSet from '../components/SkillSet';
 import { fetchPostContent } from '../contentful';
 
 function HomePage() {
@@ -35,6 +35,7 @@ function HomePage() {
           ))
         : null}
         </Row>
+        <SkillSet/>
     </>
   )
 }
