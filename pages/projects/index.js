@@ -18,7 +18,9 @@ function ProjectsPage() {
   return (
     <>
     <Breadcrumbs/>
-    <TitlePage title='Projects' />
+    <div style={{ marginRight: '2rem', marginLeft: '2rem'}}>
+      <TitlePage title='Projects' />
+    </div>
     <Row>
     {projects.length > 0
         ? projects.map(p => (

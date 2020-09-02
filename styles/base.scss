@@ -68,13 +68,6 @@ p {
   }
 }
 
-.title-page {
-  @include respond(phone) {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-}
-
 .stack {
   display: flex;
   justify-content: space-evenly;

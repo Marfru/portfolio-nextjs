@@ -19,7 +19,9 @@ function WorkPage() {
   return (
     <>
     <Breadcrumbs/>
-    <TitlePage title='Work' />
+    <div style={{ marginRight: '2rem', marginLeft: '2rem'}}>
+      <TitlePage title='Work' />
+    </div>
     <Row>
     {work.length > 0
         ? work.map(p => (
