@@ -29,7 +29,7 @@ function MenuItems({open, setOpen}) {
         <ul>
         {menu.length > 0
           ? menu.map(p => (
-            <li>
+            <li key={p.sys.id}>
               <Link 
               as={p.fields.url} 
               href={p.fields.url}>

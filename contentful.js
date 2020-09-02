@@ -26,3 +26,27 @@ export async function fetchMenuContent() {
   if (entries.items) return entries.items
   console.log(`Error getting Entries for ${contentType.name}.`)
 }
+
+export async function fetchWorkContent() {
+  const entries = await client.getEntries({
+    content_type: 'work',
+  })
+  if (entries.items) return entries.items
+  console.log(`Error getting Entries for ${contentType.name}.`)
+}
+
+export async function fetchProjectsContent() {
+  const entries = await client.getEntries({
+    content_type: 'projects',
+  })
+  if (entries.items) return entries.items
+  console.log(`Error getting Entries for ${contentType.name}.`)
+}
+
+export async function fetchAboutContent() {
+  const entries = await client.getEntries({
+    content_type: 'about',
+  })
+  if (entries.items) return entries.items
+  console.log(`Error getting Entries for ${contentType.name}.`)
+}

@@ -16,7 +16,7 @@ function About() {
     <div className="about">
     {about.length > 0
         ? about.map(p => (
-          <div className="about__content">
+          <div className="about__content" key={p.sys.id}>
             <h3 style={{ marginBottom: '1.5rem'}}><span className="about__emoji" aria-label="hello" role="img">👋</span> {p.fields.subtitle}</h3>
             <h1>{p.fields.title}</h1>
             <p dangerouslySetInnerHTML={{ __html: p.fields.description }} />

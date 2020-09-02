@@ -2,7 +2,7 @@
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import SinglePost from '../../components/singlePost'
-import HomeLink from '../../components/HomeLink'
+import Breadcrumbs from '../../components/Breadcrumbs'
 import { fetchPostContent } from '../../contentful'
 
 function SkillsPage() {
@@ -22,7 +22,7 @@ function SkillsPage() {
 
   return (
     <>
-   <HomeLink/>
+   <Breadcrumbs/>
     {singlePosts.length > 0
       ? singlePosts.map(p => (
     <SinglePost

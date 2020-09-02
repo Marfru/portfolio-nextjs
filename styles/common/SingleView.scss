@@ -1,6 +1,4 @@
 .single-view {
-  margin: 3rem 0;
-
   &__image {
     align-self: center;
 
@@ -12,6 +10,13 @@
   }
 
   &__content {
+    
+    &:not(:first-child) {
     margin-top: 3rem;
+    }
+
+    p {
+      font-size: 16px;
+    }
   }
 }

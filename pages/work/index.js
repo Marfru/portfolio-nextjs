@@ -1,11 +1,43 @@
-import Work from '../../components/Work';
+import { useEffect, useState } from 'react'
+import TitlePage from '../../components/TitlePage'
+import Breadcrumbs from '../../components/Breadcrumbs'
+import { fetchWorkContent } from '../../contentful'
+import { Row } from 'react-bootstrap'
+import { Image } from 'react-bootstrap'
+import LaunchIcon from '@material-ui/icons/Launch';
 
 function WorkPage() {
+  const [work, setWork] = useState([])
 
+  useEffect(() => {
+    async function getWork() {
+      const allWork = await fetchWorkContent()
+      setWork([...allWork])
+    }
+    getWork()
+  }, [])
   return (
     <>
-    <Work />
-      </>
+    <Breadcrumbs/>
+    <TitlePage title='Work' />
+    <Row>
+    {work.length > 0
+        ? work.map(p => (
+          <div className="skills">
+          <a href={p.fields.url} target="_blank" rel="noopener noreferrer">
+            <Image className="skills__image" src={`https:${p.fields.image.fields.file.url}`} fluid/>
+            <div className="skills__text">
+              <h3>{p.fields.company}</h3>
+              <h4>{p.fields.date}</h4>
+              <p>{p.fields.description}</p>
+              <span className="skills__span">Visit <LaunchIcon fontSize="small"/></span>
+            </div>
+          </a>
+        </div>
+          ))
+        : null}
+        </Row>
+        </>
   )
 }
 

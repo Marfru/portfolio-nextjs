@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link'
-import Logo from '../images/logo2.svg';
+import Logo from '../images/logo.svg';
 import Menu from './Menu';
 
 function Header() {

@@ -18,9 +18,6 @@ function HomePage() {
 
   return (
     <>
-      <Head>
-        <title>Marcos Frutos | Front End Development, UX and UI</title>
-      </Head>
       <About />
 
       <Row className="vision">
