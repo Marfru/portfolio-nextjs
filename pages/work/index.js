@@ -28,7 +28,7 @@ function WorkPage() {
           <Col lg={4} sm={12}>
           <div className="skills">
           <a href={p.fields.url} target="_blank" rel="noopener noreferrer">
-            <Image className="skills__image" src={`https:${p.fields.image.fields.file.url}`} fluid/>
+            <Image className="skills__image" src={`https:${p.fields.image.fields.file.url}`} alt={p.fields.company} fluid/>
             <div className="skills__text">
               <h3>{p.fields.company}</h3>
               <h4>{p.fields.date}</h4>

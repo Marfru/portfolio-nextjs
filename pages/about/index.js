@@ -28,7 +28,7 @@ function AboutPage() {
           <div className="single-view__text" dangerouslySetInnerHTML={{ __html: p.fields.description }} />
           </Col>
           <Col className="single-view__image" sm={12} lg={6}>
-          <Image src={`https:${p.fields.image.fields.file.url}`} alt="company logo" fluid/>
+          <Image src={`https:${p.fields.image.fields.file.url}`} alt="marcos frutos" fluid/>
           </Col>
             </Row>
           </div>

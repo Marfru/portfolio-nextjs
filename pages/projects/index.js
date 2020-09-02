@@ -28,7 +28,7 @@ function ProjectsPage() {
         <div className="skills">
           <a href={p.fields.url} target="_blank" rel="noopener noreferrer">
             <div style={{ padding: '10px 30px'}}>
-            <Image className="skills__image" src={`https:${p.fields.image.fields.file.url}`} fluid/>
+            <Image className="skills__image" src={`https:${p.fields.image.fields.file.url}`} alt={p.fields.title} fluid/>
             </div>
             <div className="skills__text">
               <h3>{p.fields.title}</h3>

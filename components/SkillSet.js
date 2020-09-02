@@ -11,28 +11,28 @@ function SkillSet() {
   return (
     <div className='stack'>
       <div className='stack__container'>
-        <img src={ReactSVG} />
+        <img src={ReactSVG} alt='react logo' />
       </div>
       <div className='stack__container'>
-        <img src={VueSVG} />
+        <img src={VueSVG} alt='vue logo' />
       </div>
       <div className='stack__container'>
-        <img src={JsSVG} />
+        <img src={JsSVG} alt='javascript logo'/>
       </div>
       <div className='stack__container'>
-        <img src={SassSVG} />
+        <img src={SassSVG} alt='sass logo' />
       </div>
       <div className='stack__container'>
-        <img src={WebpackSVG} />
+        <img src={WebpackSVG} alt='webpack logo'/>
       </div>
       <div className='stack__container'>
-        <img src={GitSVG} />
+        <img src={GitSVG} alt='git logo'/>
       </div>
       <div className='stack__container'>
-        <img src={NetlifySVG} />
+        <img src={NetlifySVG} alt='netlify logo' />
       </div>
       <div className='stack__container'>
-        <img src={FigmaSVG} />
+        <img src={FigmaSVG} alt='figma logo'/>
       </div>
     </div>
   )
